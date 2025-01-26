@@ -1,9 +1,12 @@
 import { VscVscodeInsiders } from "react-icons/vsc";
 import vscode from "../assets/icons/vscode.ico";
 const list = ["File", "Edit", "View", "Go", "Run", "Terminal", "Help"];
-function Navbar({ theme }) {
+import { useTheme } from "../context/ThemeContext";
+function Navbar() {
+  //const { theme } = useTheme()
   return (
-    <header className={` theme-${theme} bg-titlebarBg text-textColor `}>
+    
+    <header className="bg-titlebarBg text-textColor">
       <nav
         className={`mx-3 flex h-8 items-center justify-between  text-center`}
       >

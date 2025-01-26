@@ -1,9 +1,12 @@
 import React from 'react'
+import Code from './icons/CodeIcon'
+import { useLocation } from 'react-router-dom'
 
-const Sidebar = () => {
-  return (
-    <div>Sidebar</div>
-  )
+
+function Sidebar() {
+
+  const location = useLocation();
+
 }
 
 export default Sidebar
